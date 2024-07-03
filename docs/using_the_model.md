@@ -40,6 +40,8 @@ Para a rota `Adicionar Produto`, o formato do payload deve seguir o seguinte pad
 }
 ```
 
+PostMan link: [ZRP Challenge](https://teste4-8598.postman.co/workspace/Teste-Workspace~475c561d-4423-4c1d-9c83-a951a88f71e5/collection/24590168-201107cf-d88d-4b90-a045-2ee3c0dd60ad?action=share&creator=24590168)
+
 ---
 
 # Funcionalidades
