@@ -3,7 +3,7 @@
 > O modelo foi desenvolvido e testado apenas em `Ubuntu/Fedora`. Pode haver instabilidades em outros ambientes.
 
 1. Clone o repositório com `git clone https://github.com/romuro-pauliv/ZRP-challenge.git`
-2. Acesse o diretório do projeto com `cd [name]`
+2. Acesse o diretório do projeto com `cd ZRP-challenge`
 3. Crie um ambiente virtual de desenvolvimento com `python3 -m venv venv`
 4. Ative o ambiente virtual com `source venv/bin/activate`
 5. Instale as dependências com `pip install --no-cache-dir -r requirements.txt`
