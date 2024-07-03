@@ -23,8 +23,7 @@ LLM Chatbot para marketplace utilizando a API da OpenAI com o modelo `gpt-3.0-tu
 
 ## Demonstração
 Uma pequena demonstração de como o chatbot funciona usando o `Terminal Chat`.
-
-<video src='demo.mp4' width=700 height=600/>
+ > video
 
 ### Panorama Geral
 
