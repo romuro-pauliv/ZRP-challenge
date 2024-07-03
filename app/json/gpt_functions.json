@@ -1,0 +1,123 @@
+{
+    "0": {
+        "type": "function",
+        "function": {
+            "name": "get_products",
+            "description": "Obter os produtos que o cliente pode se interessar",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "type": "string",
+                        "enum": [],
+                        "description": "Categorias de produtos que o cliente está buscando ou é viável recomendar, ex.: laptops, smartwatch. Somente recomende produtos se a resposta dessa função for válida, caso não, não recomende ou aceite vender outros produtos"
+                    }
+                },
+                "required": ["category"]
+            }
+        }
+    },
+    "1": {
+        "type": "function",
+        "function": {
+            "name": "get_fullname",
+            "description": "Obter o nome completo do cliente. NUNCA faça suposições sobre o nome do cliente. Sempre pergunte.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "fullname": {
+                        "type": "string",
+                        "description": "Nome completo do cliente"
+                    }
+                },
+                "required": ["fullname"]
+            }
+        }
+    },
+    "2": {
+        "type": "function",
+        "function": {
+            "name": "get_phone_number",
+            "description": "Obter o número de telefone do cliente com o DDD para finalizar a compra. Verifique se existe o DDD e também verifique se o numero sem o DDD tem pelo menos 8 números. Caso não, solicite ao cliente o número novamente. Caso não conseguir essa informação, solicite ao cliente.  NUNCA faça suposições sobre o número do cliente. Sempre pergunte.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "phone_number": {
+                        "type": "string",
+                        "description": "Número de telefone do cliente com o DDD"
+                    }
+                },
+                "required": ["phone_number"]
+            }
+        }
+    },
+    "3": {
+        "type": "function",
+        "function": {
+            "name": "get_email",
+            "description": "Obter o email do cliente para finalizar a compra. Verifique se o email é válido. Caso não, solicite novamente. Caso não conseguir essa informação, solicite ao cliente.  NUNCA faça suposições sobre o email do cliente. Sempre pergunte.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Email do cliente"
+                    }
+                },
+                "required": ["email"]
+            }
+        }
+    },
+    "4": {
+        "type": "function",
+        "function": {
+            "name": "get_order",
+            "description": "Obter o nome do produto que o cliente irá comprar. É FUNDAMENTAL obter essa informação! Sempre pergunte se cliente quer adicionar ao carrinho. Não finalize o atendimento sem completar o pedido.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "product": {
+                        "type": "string",
+                        "description": "Nome do produto que o cliente quer comprar!"
+                    }
+                },
+                "required": ["product"]
+            }
+        }
+    },
+    "5": {
+        "type": "function",
+        "function": {
+            "name": "get_payment_method",
+            "description": "Obter a forma de pagamento para finalizar a compra. Sempre pergunte. Nunca fazer suposições sobre a forma de pagamento. Sempre pergunte.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "method": {
+                        "type": "string",
+                        "enum": ["PIX", "cartão de crédito", "cartão de débito", "boleto"],
+                        "description": "forma de pagamento escolhida pelo cliente"
+                    }
+                },
+                "required": ["method"]
+            }
+        }
+    },
+    "6": {
+        "type": "function",
+        "function": {
+            "name": "remove_order",
+            "description": "Remove algum produto que o cliente não quer mais comprar caso seja solicitado.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "remove_product": {
+                        "type": "string",
+                        "description": "Nome do produto que será removido."
+                    }
+                },
+                "required": ["remove_product"]
+            }
+        }
+    }
+}

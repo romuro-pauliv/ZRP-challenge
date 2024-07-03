@@ -1,0 +1,44 @@
+{
+    "smartphone": {
+        "NovoPhone 12X": {
+            "price": 3499.0,
+            "info": ""
+        }
+    },
+    "laptop": {
+        "Ultrabook Pro 15": {
+            "price": 7999.0,
+            "info": ""
+        }
+    },
+    "smartwatch": {
+        "TimeWatch S2": {
+            "price": 1299.0,
+            "info": ""
+        }
+    },
+    "fone de ouvido": {
+        "SoundBuds Plus": {
+            "price": 399.0,
+            "info": ""
+        }
+    },
+    "c\u00e2mera": {
+        "PhotoSnap DSLR": {
+            "price": 4499.0,
+            "info": ""
+        }
+    },
+    "smart TV": {
+        "VisionScreen 55 4K": {
+            "price": 3999.0,
+            "info": ""
+        }
+    },
+    "console": {
+        "GameBox X": {
+            "price": 2999.0,
+            "info": ""
+        }
+    }
+}
