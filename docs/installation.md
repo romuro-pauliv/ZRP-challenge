@@ -7,7 +7,7 @@
 3. Crie um ambiente virtual de desenvolvimento com `python3 -m venv venv`
 4. Ative o ambiente virtual com `source venv/bin/activate`
 5. Instale as dependências com `pip install --no-cache-dir -r requirements.txt`
-6. Crie um arquivo `.env` com sua chave de API da OpenAI: `echo "OPEN_AI_KEY=[sua API KEY da OpenAI]" > .env`
+6. Crie um arquivo `.env` com sua chave de API da OpenAI: `echo "OPENAI_API_KEY=[sua API KEY da OpenAI]" > .env`
 
 Após isso, inicialize a API com o seguinte comando:
 
